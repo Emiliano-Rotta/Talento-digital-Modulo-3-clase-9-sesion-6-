@@ -72,29 +72,87 @@ var array = ["Emiliano", 31, false]
 
 // Consigna: Crea un array vacío llamado let nombres = []; y utiliza push() para agregar tres nombres. Luego, imprime el array completo.
 // Respuesta:
+// let nombres = []
+
+// // nombres.push("Emiliano")
+// // nombres.push("Rodolfo")
+// // nombres.push("David")
+// nombres.push("Emiliano", "Rodolfo", "David")
+// console.log(nombres)
+
 
 // Consigna: Crea un array let paises = ["Argentina", "Brasil", "Chile", "Uruguay"]; y utiliza pop() dos veces. ¿Cuál es el array resultante?
 // Respuesta:
 
+// let paises = ["Argentina", "Brasil", "Chile", "Uruguay"]
+// paises.pop()
+// paises.pop()
+
+// console.log(paises)
 
 // Consigna: Crea un array let letras = ["a", "b", "c", "d"]; y utiliza shift() hasta que el array esté vacío. ¿Qué valor retorna cada vez que se usa shift()?
 // Respuesta:
 
+// let letras = ["a", "b", "c", "d"]
+// letras.shift()
+// console.log(letras)
+// letras.shift()
+// console.log(letras)
+// letras.shift()
+// console.log(letras)
+// letras.shift()
+// console.log(letras)
 
 // Consigna: Crea un array let animales = ["gato", "perro"]; y utiliza unshift() para agregar "león" y "tigre" al principio. Imprime el array resultante.
 // Respuesta:
+// let animales = ["gato", "perro"];
+// // animales.unshift("león")
+// // animales.unshift("tigre")
+
+// animales.unshift("león", "tigre")
+// console.log(animales)
+
 
 
 // Consigna: Dado el array let numeros = [1, 2, 5, 6];, utiliza splice() para agregar los números 3 y 4 entre el 2 y el 5. Imprime el array resultante.
 
 
+// let numeros = [1, 2, 5, 6];
+
+// numeros.splice(2,0,3,4)
+// console.log(numeros) // [ 1, 2, 3, 4, 5, 6 ]
+
+
+
+
+
 // ------------------------------]
 // En este ejercicio vamos a utilizar varios métodos para manipular un array de frutas. Debes realizar las siguientes acciones utilizando los métodos length(), push(), pop(), shift(), unshift() y splice().
 
-// Crea un array con las siguientes frutas: "manzana", "banana", "naranja", "pera".
-// Agrega la fruta "uva" al final del array.
-// Elimina la primera fruta del array.
-// Añade la fruta "mango" al inicio del array.
-// Elimina la segunda fruta del array y reemplázala con "kiwi".
-// Muestra en consola la longitud del array en cada paso.
+//1 Crea un array con las siguientes frutas: "manzana", "banana", "naranja", "pera".
+//2 Agrega la fruta "uva" al final del array.
+//3 Elimina la primera fruta del array.
+//4 Añade la fruta "mango" al inicio del array.
+//5 Elimina la segunda fruta del array y reemplázala con "kiwi".
+//6 Muestra en consola la longitud del array en cada paso.
 
+//1
+let frutas = ["manzana", "banana", "naranja", "pera"]
+console.log(frutas.length)
+//2
+let longitud = frutas.push("uva")
+console.log(longitud) //Este es otro metodo para que me arroje la longitud, ya que estos metodos de array MODIFICA EL ARRAY ORIGINAL y devuelve la longitud del mismo (esta longitud la guardamos en esta variable y luego le hacemos un console.log)
+//3
+frutas.shift()
+console.log(frutas.length)
+//4
+frutas.unshift("mango")
+console.log(frutas.length)
+//5
+frutas.splice(1,1,"kiwi")
+console.log(frutas.length)
+//6
+
+
+
+console.log(frutas)
